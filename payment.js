@@ -3,6 +3,8 @@ document.querySelector("form").addEventListener("submit", payment);
 
 var hardCode = "000 111 222 333";
 var cvvNum = "123"
+
+
 function payment(){
     event.preventDefault();
 
@@ -31,6 +33,6 @@ function payment(){
             alert("Wrong otp")
         }
     }
-    // console.log(cvv, cardNum, date, name)
+     
 
 }
