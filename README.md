@@ -1,7 +1,7 @@
 # Bluemercury-Clone
 
-Kamlesh Bhatt -> Home Page
-Tilak Ran -> Navbar, Footer
-Aravind Macherla -> Product Page
-Anwar Rizwan -> Login/Signup Page
-Bharatveer Singh -> Cart/Wishlist Page
+Kamlesh Bhatt -> Home Page <br />
+Tilak Ram -> Navbar, Footer <br />
+Aravind Macherla -> Product Page <br />
+Anwar Rizwan -> Login/Signup Page <br />
+Bharatveer Singh -> Cart/Wishlist Page <br />
