@@ -1,6 +1,83 @@
-body{
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body>img{
+    width: 100%;
+    margin-bottom: 10rem;
+    object-fit: scale-down;
 }
 footer{
     font-size: 20px;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-family: 'Montserrat', sans-serif;
+    margin: 5rem;
+}
+
+.footer_container >div{
+    margin-top: 15px;
+}
+
+h2{
+    font-size: 17px;
+    font-weight: 400;
+}
+ul{
+    display: initial;
+}
+
+ul li{
+   
+    list-style: none;
+     
+}
+.social_icon{
+    margin-top: 10px;
+}
+.social a{
+    color: black;
+    font-size: 17px;
+    padding: 10px;
+}
+p,a{
+    font-size: 13px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+@media only screen and (max-width:1050px){
+
+
+    .footer_container{
+         
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width:768px){
+
+
+    .footer_container{
+         
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width:550px){
+
+
+    .footer_container{
+         
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
