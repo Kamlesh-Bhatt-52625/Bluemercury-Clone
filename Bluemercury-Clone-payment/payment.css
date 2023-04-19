@@ -1,0 +1,66 @@
+h3,
+h4,
+p {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.container {
+
+    width: 30%;
+    margin: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding-right: 15px;
+}
+
+.cardImg>img {
+    width: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+
+
+}
+
+input {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#payment {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1024px) {
+
+    .container {
+
+        width: 60%;
+    }
+
+}
+@media only screen and (max-width:768px) {
+
+    .container {
+
+        width: auto;
+    }
+
+}
+ 
