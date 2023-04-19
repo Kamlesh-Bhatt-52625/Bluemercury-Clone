@@ -5,7 +5,7 @@ var hardCode = "000 111 222 333";
 var cvvNum = "123"
 
 
-function payment(){
+function payment() {
     event.preventDefault();
 
 
@@ -15,24 +15,30 @@ function payment(){
     let name = document.getElementById("name").value;
 
 
- 
-    if(hardCode !== cardNum || cvvNum !== cvv){
+
+    if (hardCode !== cardNum || cvvNum !== cvv) {
         alert("Invalid card number or cvv")
-    }else if(new Date(exp_date) < new Date()){
+    } else if (new Date(exp_date) < new Date()) {
         alert("Your card expired")
-    }else{
+    } else {
 
 
         var otp = prompt("please enter otp: ");
 
-        if(otp === "1234"){
+        if (otp === "1234") {
+
+
+            window.location.href = "pSuccess.html";
+
             alert("payment is succesful")
 
-            window.location.href = "pSuccess.html"
-        }else{
-            alert("Wrong otp")
+
+        } else {
+            alert("Wrong OTP")
         }
     }
-     
+
 
 }
+
+
