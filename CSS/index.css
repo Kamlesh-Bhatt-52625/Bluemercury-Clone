@@ -1,0 +1,119 @@
+/* Sliding Options Start */
+
+#slider{
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+#slider figure div {
+    height: 36px;
+    float: left;
+    width: 20%;
+    text-align: center;
+    text-size-adjust: 100%;
+    color: rgb(18, 40, 76);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 36px;
+    background-color: rgb(215, 235, 242);
+}
+
+#slider figure div:hover{
+    cursor: pointer;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/* Sliding Options End */
+
+/* Product Sliding Start */
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 700%;
+    height: 350px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+
+.slide {
+    width: 14.28%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.change{
+    position: relative;
+    top: -3.4em;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+
+#radio1:checked~#MakeItSlide {
+    margin-left: 0;
+}
+
+#radio2:checked~#MakeItSlide {
+    margin-left: -14.28%;
+}
+
+#radio3:checked~#MakeItSlide {
+    margin-left: -28.56%;
+}
+
+#radio4:checked~#MakeItSlide {
+    margin-left: -42.84%;
+}
+
+
+/* Product Sliding End */
