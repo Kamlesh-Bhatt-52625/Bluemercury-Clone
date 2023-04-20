@@ -9,9 +9,9 @@ function login(){
     getCredDetails.map(function(e,i){
 
         if(email==e.email && pass == e.pass){
-            alert("hello user")
+            // alert("hello user")
            
-            window.location.href="./home.html"
+            window.location.href="./payment.html"
         }else{
             alert("wrong cred")
             window.location.href="./login.html"

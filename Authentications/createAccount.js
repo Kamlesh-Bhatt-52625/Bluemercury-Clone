@@ -25,4 +25,8 @@ function createAccount() {
 
     localStorage.setItem("userCred", JSON.stringify(credentialArr))
 
+    document.querySelector(".registerbutton").innerHTML="LOADING..."
+    setTimeout(function(){})
+    window.location.href="./home.html"
+
 }
