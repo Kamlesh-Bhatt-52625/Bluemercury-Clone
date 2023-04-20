@@ -137,8 +137,9 @@ img{
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+    /* flex-grow: 5; */
     display: none;
-}
+} 
 
 .slide-parent {
     display: flex;
@@ -173,7 +174,6 @@ img{
     height: 50px;
     font-size: 70px;
     color: gray;
-    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #slide-leftarrow button:hover{
@@ -186,6 +186,7 @@ img{
 /* BestSeller End */
 
 
+/* Befor EXPLORE THE CACHE VOLUME II Slide Start */
 #lipstick {
     display: grid;
     grid-gap: 50px;
@@ -195,6 +196,13 @@ img{
 }
 
 #lipstick-content{
+    text-align: justify; /* For Edge */
+    text-align-last: end;
+    display: block;
+    margin: auto;
+}
+
+#lipstick-content-cache{
     text-align: justify; /* For Edge */
     text-align-last: end;
     display: block;
@@ -260,3 +268,9 @@ img{
     color: orange;
     cursor: pointer;
 }
+
+#image43{
+    display: block;
+    margin: auto;
+}
+/* Befor EXPLORE THE CACHE VOLUME II Slide End */
