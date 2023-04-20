@@ -18,6 +18,7 @@ p {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     padding-top: 5px;
     border-radius: 5px;
+    margin-top: 30px;
 }
 
 .card {
@@ -56,8 +57,8 @@ input {
 @media only screen and (max-width:1024px) {
 
     .container {
-
-        width: 60%;
+        width: 75%;
+        margin-top: 30px;
     }
 
 }
@@ -66,6 +67,7 @@ input {
     .container {
 
         width: auto;
+        margin: 15px;
     }
 
 }
