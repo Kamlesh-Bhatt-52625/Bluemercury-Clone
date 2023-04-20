@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            
+    font-family: 'Montserrat', sans-serif;
+        }
+ 
+ 
+   
+ 
+ .SectionHeader{
+    font-family: 'Montserrat', sans-serif;
+    
+    Font-size: 28px;
+   Font-weight: 700;
+  Line-height: 46.2px;
+  color: rgb(18, 40, 76);
+ 
+     width: 420px;
+ }
+ .Cart__Promo-Container{
+    display: flex;
+   flex-direction:row;
+   padding: 10px;
+   width: 400px;
+   height: 50px;
+   align-items: center;
+   margin-left: 1000px;
+   
+   
+   
+
+  margin-bottom: 15px;
+    background-color:#e8e6e6;
+   
+    color: rgb(18, 40, 76);
+}
+ 
+table,td,th{
+    font-weight: 100;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #e8e6e6;}
+ 
+
+
+
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <header>
+            <div class="SectionHeader">
+                <h1>Your Bag</h1>
+            </div>
+        </header>
+
+        <div class="Cart__Promo-Container ">
+            <div>
+                 
+                <p class="Promo-Text">Your Order Qualifies For Free Ground Shipping!</p>
+            </div>
+        </div>
+        <div>
+            <h3>Your Cart</h3>
+                  <p><b>  IS THIS ORDER A GIFT? </b> </p>  
+        <p>   The price of your order will be hidden on the gift receipt. </p>
+            
+            </div>
+
+
+
+        <main>
+            <table>
+              <thead>
+                <tr>
+                    <th>Ready to Ship</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="body"></tbody>
+            </table>
+          </main>
+        </body>
+        <script>
+           priorArr=JSON.parse(localStorage.getItem("Addbag"))  || [] ;
+       
+       
+       displayData(priorArr)
+        
+       
+       function displayData(data){
+           let tableBody=document.querySelector("tbody")
+           tableBody.innerHTML=""
+           data.map(function(ele,i){
+       var tr=document.createElement("tr")
+       
+       
+       var td1=document.createElement("td")
+       td1.textContent=ele.ReadytoShip
+       
+       var td2=document.createElement("td")
+       td2.textContent=ele.Price
+       
+       var td3=document.createElement("td")
+       td3.textContent=ele.Quantity
+
+
+       var td4=document.createElement("td")
+       td4.textContent=ele.total
+       
+       
+       
+        
+       tr.append(td1,td2,td3,td4)
+       
+       tableBody.append(tr)
+        
+            })
+       
+       }
+        </script>
+      </html>
+
+         
+
+ 
+        
+ 
