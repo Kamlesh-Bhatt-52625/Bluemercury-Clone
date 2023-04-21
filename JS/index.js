@@ -22,14 +22,14 @@ var slideLeft2 = 1;
 var slideRight2 = 4;
 
 
-function slideShow() {
-    for (let i = slideLeft; i <= slideRight; i++) {
+function LetItSlide() {
+    for (var i = slideLeft; i <= slideRight; i++) {
         document.getElementById("sc" + i).style.display = "inline-block";
     }
-    for (let i = slideLeft1; i <= slideRight1; i++) {
+    for (var i = slideLeft1; i <= slideRight1; i++) {
         document.getElementById("scc" + i).style.display = "inline-block";
     }
-    for (let i = slideLeft2; i <= slideRight2; i++) {
+    for (var i = slideLeft2; i <= slideRight2; i++) {
         document.getElementById("sccc" + i).style.display = "inline-block";
     }
 }
@@ -73,7 +73,7 @@ function slideMoveRight1() {
         slideLeft1++;
         slideRight1++;
 
-        for (let i = slideLeft1; i <= slideRight1; i++) {
+        for (var i = slideLeft1; i <= slideRight1; i++) {
             document.getElementById("scc" + i).style.display = "inline-block";
         }
     } 
@@ -88,7 +88,7 @@ function slideMoveLeft1() {
         slideLeft1--;
         slideRight1--;
 
-        for (let i = slideLeft1; i <= slideRight1; i++) {
+        for (var i = slideLeft1; i <= slideRight1; i++) {
             document.getElementById("scc" + i).style.display = "inline-block";
         }
     } 
@@ -104,7 +104,7 @@ function slideMoveRight2() {
         slideLeft2++;
         slideRight2++;
 
-        for (let i = slideLeft2; i <= slideRight2; i++) {
+        for (var i = slideLeft2; i <= slideRight2; i++) {
             document.getElementById("sccc" + i).style.display = "inline-block";
         }
     } 
@@ -119,7 +119,7 @@ function slideMoveLeft2() {
         slideLeft2--;
         slideRight2--;
 
-        for (let i = slideLeft2; i <= slideRight2; i++) {
+        for (var i = slideLeft2; i <= slideRight2; i++) {
             document.getElementById("sccc" + i).style.display = "inline-block";
         }
     } 
