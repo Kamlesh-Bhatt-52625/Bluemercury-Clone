@@ -18,7 +18,7 @@ width: 100%;
 height: 30px;
 background-color: rgb(149, 185, 225);
 text-align: center;
- color: rgb(214, 215, 210);
+ color: rgb(239, 241, 241);
 font-family: 'Montserrat', sans-serif;
  
  }
@@ -51,57 +51,31 @@ width: 100%;
 button:hover {
   background-color: rgb(125, 157, 199);
 }
-.div5{
-width: 100%;
-height: 60px;
-align-items: center;
-margin-left: 650px;
-}
+ 
+ 
  
 
  
   
- .div6{
-   display: flex;
    
- }
-  .img3{
-   width: 700px;
-    margin: 25px;
-
-  }
-  p{
-   text-align: center;
-   font-size: 15px;
-   color: rgb(125, 157, 199);
-   font-family: 'Montserrat', sans-serif;
-   font-style: italic;.
-  }
-  h2{
-   text-align: left;
-   font-size: 20px;
-   color: rgb(30, 63, 106);
-   font-family: 'Montserrat', sans-serif;
-   margin-left: 16px;
-
-  }
-  h3{
-   text-align: left;
-   font-size: 20px;
-   color: rgb(30, 63, 106);
-   font-family: 'Montserrat', sans-serif;
-   margin-left: 16px;
-   text-underline-position: under;
-
-  }
+ 
+  
+  
  
 
     </style>
 </head>
 <body>
-   <div class="div1">
-    <P>Free Shipping For BlueRewords Members</P>
-   </div>
+
+
+ 
+ 
+
+   <div class="scroll-left"  style="display: flex; justify-content:space-between;">
+      <P>Free Shipping For BlueRewords Members</P>
+      <p> Free Gifts with purchase Brows now ></p>
+     
+      </div>
    <div class="div2">
         <!--
             Hii
@@ -117,34 +91,113 @@ margin-left: 650px;
     <img class="img2" src="imgblumercury.jpg" alt="">
    </div>
     
-   
-   <div class="div6">
-      <div>
-<img  class="img3" src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/New_SPF_Round_Up_Side_by_Side.jpg?v=1681740310&width=832" alt="">
-<h2>Make Your Eyes Stand Out</h2>
-<br>
-<p>This palette has something for everyone! The Kaleidescope <br> 
-   Nudes Eyeshadow Palette has shades to make every eye color pop</p>  
-   <br> 
-   <h3>Shop Now</h3>     
-</div>
-      <div>
-        
-         <img class="img3" src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/LA_Kaleidescope_Nudes_Side_by_Side.jpg?v=1681739863&width=832" alt="">
-         <h2>  Everything Under the Sun</h2>
-         <br>
-<p>Now you have no more excuses for skipping sunscreen,<br> 
-   thanks to new face and body formulas that feel great while offering protection</p>  
-   <br> 
-   <h3>Shop Now</h3>
-   </div>
-      <div>
-         
-       
-   </div>
-   <br>
-<p>  </p>
+  </div>
+  
+<style>
+ 
+ 
+ /* On screens that are 992px or less, set the background color to blue */
+ @media screen and (max-width: 992px) {
+   .div3{
+      margin-left: 650px;
+      width: 250px;
+    height: 50px;
+    border: none;
+    color: azure;
+    background-color: #132747;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 40px;
+   }
+ }
+ 
+ 
+ /* On screens that are 600px or less, set the background color to olive */
+ @media screen and (max-width: 600px) {
+   .div3 {
+      
+      width: 250px;
+    height: 50px;
+    border: none;
+    color: azure;
+    background-color: #132747;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 40px;
+   }
+ }
 
+</style>
+  
+ 
+
+
+
+
+
+
+
+   
+  <style>
+   .scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+ 
+background-color: rgb(149, 185, 225);
+text-align: center;
+ color: azure ;
+font-family: 'Montserrat', sans-serif;
+   }
+   .scroll-left p {
+    
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+     
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+   </style>
+   
+   
+   
+
+
+
+ 
+   
+   
    
    
    
