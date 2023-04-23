@@ -242,7 +242,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
 }
 
 #lipstick div p:nth-child(1) {
@@ -270,7 +270,7 @@ img{
     padding-bottom: 5px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
-    /* margin-left: 84%; */
+    margin-left: 84%;
     text-align: right;
     width: fit-content;
     /* text-align: justify; For Edge */
