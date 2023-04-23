@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bluemercury.com</title>
+
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<header class="containerHeader">
+    <nav class="navFlex">
+        <div class="left">
+            <a class="m_logo" href="" ><img src="./img/logo.webp" alt="logo"></a>
+            <ul>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">NEW!</a></li>
+                <li><a href="">BRANDS</a></li>
+                <li><a href="">EXPLORE</a> </li>
+                <li><a href="">EVENT</a></li>     
+            </ul>
+            <!-- <div></div>
+            <div class="shop-button"><button id="hide">
+                <a id="shop-hover" class="option">SHOP</a>
+            </button></div>
+            <div><a class="option">NEW!</a></div>
+            <div><a class="option">BRANDS</a></div>
+            <div><a class="option">EXPLORE</a></div>
+            <div><a class="option">EVENT</a></div>
+            <div></div> 
+            <i id="nav" class="fa-solid fa-bars"></i> -->
+        </div>
+
+        <div id="shop">
+            <div id="first" class="one">
+                <p><a href="">BESTSELLERS</a></p>
+                <p><a href="">SKINCARE</a></p>
+                <p><a href="">MAKEUP</a></p>
+                <p><a href="">HAIR CARE</a></p>
+                <p><a href="">BATH & BODY</a></p>
+                <p><a href="">FRAGRANCE</a></p>
+                <p><a href="">TOOLS& ACCESSORIES</a></p>
+                <p><a href="">hOME & LIFESTYLE</a></p>
+                <p><a href="">SUN CARE</a></p>
+                <p><a href="">MEN</a></p>
+                <p><a href="">GIFTS</a></p>
+                <p><a href="">LAST CHANCE & OFFERS</a></p>
+            </div>
+            <div id="second" class="two"></div>
+                <div id="third" class="one">
+                    <P>BY CATEGORY</P>
+                    <P>Shop All</P>
+                    <P>Skincare</P>
+                    <p>Makeup</p>
+                    <p>Hair Care</p>
+                    <p>Bath & Body</p>
+                    <p>Fragrance</p>
+                    <p>Tools & Accessories</p>
+                </div>
+            <div id="fourth" class="one">
+                <p>By Brand</p>
+                <p>Augustinus Bader</p>
+                <p>Chantecaille</p>
+                <p>Dr. Barbara Strum</p>
+                <p>Diptyque</p>
+                <p>Dyson</p>
+                <p>EltaMD</p>
+                <p>La Mer</p>
+                <p>Lune+Aster</p>
+                <p>M-61</p>
+                <p>Oribe</p>
+                <p>Skinceuticals</p>
+                <p>Trish McEvoy</p>
+            </div>
+            <div id="fifth" class="one">
+                <div>
+                    <img src="./Assets/94.jpg" 
+                    alt="">
+                    <p>M-61 Formulas You Love</p>
+                    <p>A best-selling cult-favorite clinical skincare brand</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right df" >
+            <input type="text" name="search" placeholder="SEARCH...">
+
+
+            <ul class="df ">
+                <a class="tag" href=""> <img src="./img/wishlist.png" alt="">Wishlist</a> 
+                <a class="tag" href=""> <img src="./img/bag.png" alt="">Bag</a> 
+                <a class="tag" href="signup.html"> <img src="./img/user.png" alt="">SIGN IN / UP</a> 
+                
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<!-- Navbar End -->
+
+<body onchange="LetItSlide()" onload="LetItSlide()">
+<!-- Navbar Start -->
+
+    <!-- Sliding Options Start-->
+    <div id="slider">
+        <figure>
+            <div>Free Samples With All Orders</div>
+            <div>Order by April 22 for free priority Shipping</div>
+            <div>Free Gifts With Purchase. Browse now ></div>
+            <div>Get The Special Deals</div>
+        </figure>
+    </div>
+
+    <!-- Sliding Options End -->
+
+    <!-- Product Sliding Start -->
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1"/>
+            <input type="radio" name="radio-btn" id="radio2"/>
+            <input type="radio" name="radio-btn" id="radio3"/>
+            <input type="radio" name="radio-btn" id="radio4"/>
+            
+            <div class="slide" id="MakeItSlide">
+                <img src="./Assets/1 (4).jpg" 
+                alt="Cosmetic Product">
+            </div>
+            
+            <div class="slide">
+                <img src="./Assets/2 ss.png" 
+                alt="Cosmetic Product">
+            </div>
+
+            <div class="slide">
+                <img src="./Assets/3 ss.png" 
+                alt="Cosmetic Product">
+            </div>
+
+            <div class="slide">
+                <img src="./Assets/4 ss.png" 
+                alt="Cosmetic Product">
+            </div>
+        </div>
+    </div>
+    <!-- Product Sliding End -->
+
+    <!-- Bestseller Sliding Start -->
+    <div id="slide-explore" onchange="LetItSlide()">
+        <div id="slide-above">
+            <p>BESTSELLERS</p>
+        </div>
+        <div class="slide-parent">
+            <div id="slide-leftarrow" onclick="slideMoveLeft()">
+                <button> < </button>
+            </div>
+            <div class="slide-child" id="sc1">
+                <img src="./Assets/6.jpg" 
+                alt="SKINCEUTICALS">
+                <p>SKINCEUTICALS</p>
+                <p>C E Ferulic</p>
+                <p>$182</p>
+            </div>
+
+            <div class="slide-child" id="sc2">
+                <img src="./Assets/7.jpg" 
+                alt="M-61">
+                <p>M-61</p>
+                <p>PowerGlow Peel</p>
+                <p>$32 - $118</p>
+            </div>
+
+            <div class="slide-child" id="sc3">
+                <img src="./Assets/8.jpg" 
+                alt="SUPERGOOP!">
+                <p>SUPERGOOP!</p>
+                <p>Unseen Sunscreen SPF 40</p>
+                <p>$18 - $38</p>
+            </div>
+            
+            <div class="slide-child" id="sc4">
+                <img src="./Assets/9.jpg" 
+                alt="DYSON">
+                <p>DYSON</p>
+                <p>Copper AirWrap Multi-Styler Complete Long</p>
+                <p>$599.99</p>
+            </div>
+
+            <div class="slide-child" id="sc5">
+                <img src="./Assets/10.jpg" 
+                alt="ORIBE">
+                <p>ORIBE</p>
+                <p>Gold Lust Repair And Restore Conditioner</p>
+                <p>$22 - $196</p>
+            </div>
+
+            <div class="slide-child" id="sc6">
+                <img src="./Assets/11.jpg" 
+                alt="ORIBE">
+                <p>ORIBE</p>
+                <p>Gold Lust Repair And Restore Conditioner</p>
+                <p>$22 - $196</p>
+            </div>
+
+            <div class="slide-child" id="sc7">
+                <img src="./Assets/12.jpg" 
+                alt="LUNE+ASTER">
+                <p>LUNE+ASTER</p>
+                <p>CC Cream Broad Specture SPF 50</p>
+                <p>$52</p>
+            </div>
+
+            <div class="slide-child" id="sc8">
+                <img src="./Assets/13.jpg" 
+                alt="NEST">
+                <p>NEST</p>
+                <p>Grapefruit Reed Diffuser</p>
+                <p>$58</p>
+            </div>
+
+            <div class="slide-child" id="sc9">
+                <img src="./Assets/14.jpg" 
+                alt="THE LIGHT SALON">
+                <p>THE LIGHT SALON</p>
+                <p>Boost LED Mask</p>
+                <p>$495</p>
+            </div>
+
+            <div class="slide-child" id="sc10">
+                <img src="./Assets/15.jpg" 
+                alt="TRISH MCEVOY">
+                <p>TRISH MCEVOY</p>
+                <p>Instant Eye Lift Under Eye Concealer</p>
+                <p>$46</p>
+            </div>
+
+            <div class="slide-child" id="sc11">
+                <img src="./Assets/16.jpg" 
+                alt="LA MER">
+                <p>LA MER</p>
+                <p>Cream De La Mer Face Cream</p>
+                <p>$100 - $570</p>
+            </div>
+
+            <div class="slide-child" id="sc12">
+                <img src="./Assets/17.jpg" 
+                alt="OSEA">
+                <p>OSEA</p>
+                <p>Undaria Algae Body Oil</p>
+                <p>$52 - $84</p>
+            </div>
+
+            <div id="slide-rightarrow" onclick="slideMoveRight()">
+                <button> > </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bestseller Sliding End -->
+
+
+    <!-- Befor EXPLORE THE CACHE VOLUME II Slide Start -->
+    <div id="lipstick">
+        <div id="lipstick-content">
+            <p>New Lipstick Alert</p>
+            <p>There's nothing that'll brighten 
+                your mood (and your complexion) like a new lip color</p>
+            <p>Shop Now</p>
+        </div>
+        <div>
+            <img src="./Assets/42.jpg" 
+            alt="Lipstick">
+        </div>
+    </div>
+    <!-- Befor EXPLORE THE CACHE VOLUME II Slide End -->
+
+    <!-- EXPLORE THE CACHE VOLUME II Slide Start -->
+    <div id="slide-explore" onchange="LetItSlide()">
+        <div id="slide-above">
+            <p>EXPLORE THE CACHE VOLUME II</p>
+        </div>
+        <div class="slide-parent">
+            <div id="slide-leftarrow" onclick="slideMoveLeft1()">
+                <button> < </button>
+            </div>
+
+            <div class="slide-child" id="scc1">
+                <img src="./Assets/18.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Luxury Lip Balm V2</p>
+                <p>$19</p>
+            </div>
+            
+
+            <div class="slide-child" id="scc2">
+                <img src="./Assets/19.jpg" 
+                alt="REDMINT">
+                <p>REDMINT</p>
+                <p>Pearl Facial Cleanser</p>
+                <p>$68</p>
+            </div>
+
+            <div class="slide-child" id="scc3">
+                <img src="./Assets/20.jpg" 
+                alt="DUNE">
+                <p>DUNE</p>
+                <p>The Lifeguard Miracle Aloe</p>
+                <p>$22.95</p>
+            </div>
+
+            <div class="slide-child" id="scc4">
+                <img src="./Assets/21.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Lip Serum</p>
+                <p>$45</p>
+            </div>
+
+            <div class="slide-child" id="scc5">
+                <img src="./Assets/22.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Lip Mask</p>
+                <p>$37</p>
+            </div>
+
+            <div class="slide-child" id="scc6">
+                <img src="./Assets/23.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Luxury Lip Balm</p>
+                <p>$22</p>
+            </div>
+
+            <div class="slide-child" id="scc7">
+                <img src="./Assets/24.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Lavender Mint Lip Exfoliator</p>
+                <p>$24</p>
+            </div>
+
+            <div class="slide-child" id="scc8">
+                <img src="./Assets/25.jpg" 
+                alt="REDMINT">
+                <p>REDMINT</p>
+                <p>Gua Sha Black Obsidian</p>
+                <p>$38</p>
+            </div>
+
+            <div class="slide-child" id="scc9">
+                <img src="./Assets/26.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Citrus Luxury Hand Cream</p>
+                <p>$25</p>
+            </div>
+
+            <div class="slide-child" id="scc10">
+                <img src="./Assets/27.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Rose Diamonds Lip Exfoliator</p>
+                <p>$24</p>
+            </div>
+
+            <div class="slide-child" id="scc11">
+                <img src="./Assets/28.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Blomma Luxury Hand Cream</p>
+                <p>$25</p>
+            </div>
+
+            <div class="slide-child" id="scc12">
+                <img src="./Assets/29.jpg" 
+                alt="HENNE ORGANICS">
+                <p>HENNE ORGANICS</p>
+                <p>Nordic Merries Lip Exfoliator</p>
+                <p>$24</p>
+            </div>
+
+            <div id="slide-rightarrow" onclick="slideMoveRight1()">
+                <button> > </button>
+            </div>
+        </div>
+    </div>
+    <!-- EXPLORE THE CACHE VOLUME II Slide End -->
+
+    <!-- Middle Image EXPLORE THE CACHE VOLUME II Start -->
+    <div class="container">
+        <!-- <img src="theCache3.jpg" alt=""> -->
+             <img src="./Assets/65.jpg" alt="Snow" style="width:100%;">
+             <div class="centered"> 
+                 <p> THE CACHE</p>
+                 <p>VOLUME II</p>
+                 <p class="h2">exclusively at bluemercury</p>
+                 <p> We're introducing The Cache Volume II, three more buzzed-about brands that are 
+                     exciting insiders and showing up on the chicest bathroom shelves </p>
+                     <a>EXPLORE THE CACHE</a>
+             </div>
+           </div>
+     </div>
+
+    <!-- Middle Image EXPLORE THE CACHE VOLUME II End -->
+
+    <div id="lipstick">
+        <div>
+            <img id="image43" src="./Assets/43.jpg" 
+            alt="The Cache">
+        </div>
+        <div id="lipstick-content-cache">
+            <p>Your holistic skincare routine has arrived</p>
+            <p>Now you can create your own at-home traditional Chinese 
+                medicine ritual with the Redmint botanically based 
+                face and body range</p>
+            <p>Shop Now</p>
+        </div>
+    </div>
+
+    
+    <!-- NEW ARRIVALS Start -->
+    <div id="slide-explore" onchange="LetItSlide()">
+        <div id="slide-above">
+            <p>NEW ARRIVALS</p>
+        </div>
+        <div class="slide-parent">
+            <div id="slide-leftarrow" onclick="slideMoveLeft2()">
+                <button> < </button>
+            </div>
+
+            <div class="slide-child" id="sccc1">
+                <img src="./Assets/53.jpg" 
+                alt="DR. BARBARA STURM">
+                <p>DR. BARBARA STURM</p>
+                <p>Super Anti-Aging Body Serum</p>
+                <p>$210</p>
+            </div>
+            
+
+            <div class="slide-child" id="sccc2">
+                <img src="./Assets/54.jpg" 
+                alt="VINTNER'S DAUGHTER">
+                <p>VINTNER'S DAUGHTER</p>
+                <p>Active Renewal Cleanser</p>
+                <p>$98</p>
+            </div>
+
+            <div class="slide-child" id="sccc3">
+                <img src="./Assets/55.jpg" 
+                alt="INDIE LEE">
+                <p>INDIE LEE</p>
+                <p>AHA Exfoliating Toner</p>
+                <p>$52</p>
+            </div>
+
+            <div class="slide-child" id="sccc4">
+                <img src="./Assets/56.jpg" 
+                alt="LUNE+ASTER">
+                <p>LUNE+ASTER</p>
+                <p>Horizon Face Palette</p>
+                <p>$56</p>
+            </div>
+
+            <div class="slide-child" id="sccc5">
+                <img src="./Assets/57.jpg" 
+                alt="BLUEMERCURY">
+                <p>BLUEMERCURY</p>
+                <p>The Conscious Beauty Edit</p>
+                <p>$99</p>
+            </div>
+
+            <div class="slide-child" id="sccc6">
+                <img src="./Assets/58.jpg" 
+                alt="M-61">
+                <p>M-61</p>
+                <p>Hydraboost Body Sunscreen SPF 30</p>
+                <p>$52</p>
+            </div>
+
+            <div class="slide-child" id="sccc7">
+                <img src="./Assets/59.jpg" 
+                alt="JO MALONE LONDON">
+                <p>JO MALONE LONDON</p>
+                <p>Wild Achilea Cologne</p>
+                <p>$82</p>
+            </div>
+
+            <div class="slide-child" id="sccc8">
+                <img src="./Assets/60.jpg" 
+                alt="NEST">
+                <p>NEST</p>
+                <p>Santorini Olive & Citron Specialty 3 Wick Candle</p>
+                <p>$80</p>
+            </div>
+
+            <div class="slide-child" id="sccc9">
+                <img src="./Assets/61.jpg" 
+                alt="JAN MARINI">
+                <p>JAN MARINI</p>
+                <p>Transformation Face Cream</p>
+                <p>$120</p>
+            </div>
+
+            <div class="slide-child" id="sccc10">
+                <img src="./Assets/62.jpg" 
+                alt="CHANTECAILLE">
+                <p>CHANTECAILLE</p>
+                <p>Wild Meadows Eye Quartet (Limited Edition)</p>
+                <p>$78</p>
+            </div>
+
+            <div class="slide-child" id="sccc11">
+                <img src="./Assets/64.jpg" 
+                alt="M-61">
+                <p>M-61</p>
+                <p>PowerGlow Pro+ Niacinamide+Neuropeptide Cleanse</p>
+                <p>$34</p>
+            </div>
+
+            <div class="slide-child" id="sccc12">
+                <img src="./Assets/64 (1).jpg" 
+                alt="DR. BARBARA STRRUM">
+                <p>DR. BARBARA STRRUM</p>
+                <p>Discovery Kit</p>
+                <p>$125</p>
+            </div>
+
+            <div id="slide-rightarrow" onclick="slideMoveRight2()">
+                <button> > </button>
+            </div>
+        </div>
+    </div>
+    <!-- NEW ARRIVALS End -->
+
+    <!-- END PRODUCT Start -->
+    <div id="end-product">
+        <div>
+            <img src="./Assets/95.jpg" 
+            alt="MAKE YOUR EYES STAND OUT">
+            <p class="end-product-title">MAKE YOUR EYES STAND OUT</p>
+            <p>This palette has something for everyone! The Kaleidescope 
+                Nudes Eyeshadow Palette has shades to make every eye color pop</p>
+        </div>
+        <div>
+            <img src="./Assets/96.jpg" 
+            alt="Everything Under the Sun">
+            <p class="end-product-title">Everything Under the Sun</p>
+            <p>Now you have no more excuses for skipping sunscreen, thanks to new 
+                face and body formulas that feel great while offering protection</p>
+        </div>
+    </div>
+    <!-- END PRODUCT End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <hr>
+        <div class="footer_container" >
+
+            <div class="social">
+
+                <div class="footer_content">
+
+                    <h2>Get Expert Beauty Insight & Offers</h2>
+                   <input id="input1" type="text" placeholder= "EMAIL ADDRESS           &rarr;" >  
+                    <p>By continuing, you agree to Bluemercury's</p>
+                    <p><a href="">Privacy Notice.</a></p>
+                </div>
+              
+                  
+                 
+                <div class="social_icon">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>
+                    Copyright 2023 bluemercury. All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="about_company">
+                <h2 style="margin: left 10px;">BLUEMERCURY</h2>
+
+                <ul>
+                    <li><a href="">Our Company</a></li>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Spa Menu</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Vendor Submissions</a></li>
+                    <li><a href="">Diversity & Inclusion</a></li>
+                </ul>
+
+            </div>
+            <div class="account">
+                <h2>MY ACCOUNT</h2>
+
+                <ul>
+                    <li><a href="">My Account</a></li>
+                    <li><a href="">BlueRewards</a></li>
+                    <li><a href="">Gift Card Balance Checker</a></li>
+                </ul>
+
+            </div>
+            <div class="account">
+                <h2>CUSTOMER SERVICE</h2>
+
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Help & FAQ</a></li>
+                    <li><a href="">Shipping, Returns & Exchanges</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Offers & Promotions</a></li>
+                    <li><a href="">Klarna</a></li>
+                </ul>
+
+            </div>
+            <div class="resources">
+                <h2>RESOURCES</h2>
+
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Notice</a></li>
+                    <li><a href="">Do Not Sell or Share My Personal Information</a></li>
+                    <li><a href="">CA Privacy Rights</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Affiliate Program</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+</body>
+
+<script src="./JS/index.js"></script>
+</html>

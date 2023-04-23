@@ -13,6 +13,10 @@
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: fixed;
+
+    z-index: 1;
+
+
     top: 0;
     background: white;
     width: 100%;
@@ -35,18 +39,30 @@
 
 }
 
+
+header ul {
+
 ul {
+
     display: flex;
 
 }
 
+
+header ul li {
+
 ul li {
+
     list-style: none;
 
 }
 
 
+
+header ul li a {
+
 ul li a {
+
     text-decoration: none;
     padding: 15px;
     color: black;
@@ -60,7 +76,10 @@ ul li a {
     font-weight: 300;
 }
 
+header ul li a:hover {
+
 ul li a:hover {
+
     color: black;
     opacity: 1;
     /* display: none; */
