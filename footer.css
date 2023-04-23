@@ -12,7 +12,7 @@ footer{
     line-height: 20px;
     color: #12284c;
     text-align: center;
-    font-size: 20px;
+    
 }
 
 .footer_container{
@@ -20,6 +20,7 @@ footer{
     grid-template-columns: repeat(5, 1fr);
     font-family: 'Montserrat', sans-serif;
     margin: 5rem;
+   
 }
 
 .footer_content{
@@ -51,29 +52,9 @@ footer ul li{
      
 }
  .social_icon{
-=======
-}
-
-.footer_container >div{
-    margin-top: 15px;
-}
-
-h2{
-    font-size: 17px;
-    font-weight: 400;
-}
-ul{
-    display: initial;
-}
-
-ul li{
-   
-    list-style: none;
-     
-}
-.social_icon{
     margin-top: 10px;
 }
+
 .social a{
     color: black;
     font-size: 17px;
@@ -84,11 +65,6 @@ footer p,a{
     
 }
 footer ul li a{
-p,a{
-    font-size: 13px;
-    
-}
-ul li a{
     text-decoration: none;
     color: black;
    
