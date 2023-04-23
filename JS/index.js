@@ -21,8 +21,53 @@ var slideRight1 = 4;
 var slideLeft2 = 1;
 var slideRight2 = 4;
 
+var screenWidth = window.matchMedia("(max-width: 900px)");
+var screenWidth2 = window.matchMedia("(max-width: 700px)");
+var screenWidth3 = window.matchMedia("(max-width: 500px)");
 
-function LetItSlide() {
+function LetItSlide(screenWidth, screenWidth2) {
+    if(screenWidth.matches){
+        // For SlideShow 1
+        slideLeft = 1;
+        slideRight = 3;
+        
+        // For SlideShow 2
+        slideLeft1 = 1;
+        slideRight1 = 3;
+        
+        // For SlideShow 3
+        slideLeft2 = 1;
+        slideRight2 = 3;
+    }
+    
+    if(screenWidth2.matches){
+        // For SlideShow 1
+        slideLeft = 1;
+        slideRight = 2;
+        
+        // For SlideShow 2
+        slideLeft1 = 1;
+        slideRight1 = 2;
+        
+        // For SlideShow 3
+        slideLeft2 = 1;
+        slideRight2 = 2;
+    }
+    
+    if(screenWidth3.matches){
+        // For SlideShow 1
+        slideLeft = 1;
+        slideRight = 1;
+        
+        // For SlideShow 2
+        slideLeft1 = 1;
+        slideRight1 = 1;
+        
+        // For SlideShow 3
+        slideLeft2 = 1;
+        slideRight2 = 1;
+    }
+
     for (var i = slideLeft; i <= slideRight; i++) {
         document.getElementById("sc" + i).style.display = "inline-block";
     }
@@ -33,6 +78,10 @@ function LetItSlide() {
         document.getElementById("sccc" + i).style.display = "inline-block";
     }
 }
+
+LetItSlide(screenWidth, screenWidth2);
+
+screenWidth.addEventListener(LetItSlide);
 
 
 // For SlideShow 1

@@ -7,9 +7,8 @@
     <title>Home | Bluemercury.com</title>
 
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
-<body onload="LetItSlide()">
-<!-- Navbar Start -->
 <header class="containerHeader">
     <nav class="navFlex">
         <div class="left">
@@ -19,10 +18,69 @@
                 <li><a href="">NEW!</a></li>
                 <li><a href="">BRANDS</a></li>
                 <li><a href="">EXPLORE</a> </li>
-                <li><a href="">EVENT</a></li>
-                 
+                <li><a href="">EVENT</a></li>     
             </ul>
-            <i id="nav" class="fa-solid fa-bars"></i>
+            <!-- <div></div>
+            <div class="shop-button"><button id="hide">
+                <a id="shop-hover" class="option">SHOP</a>
+            </button></div>
+            <div><a class="option">NEW!</a></div>
+            <div><a class="option">BRANDS</a></div>
+            <div><a class="option">EXPLORE</a></div>
+            <div><a class="option">EVENT</a></div>
+            <div></div> 
+            <i id="nav" class="fa-solid fa-bars"></i> -->
+        </div>
+
+        <div id="shop">
+            <div id="first" class="one">
+                <p><a href="">BESTSELLERS</a></p>
+                <p><a href="">SKINCARE</a></p>
+                <p><a href="">MAKEUP</a></p>
+                <p><a href="">HAIR CARE</a></p>
+                <p><a href="">BATH & BODY</a></p>
+                <p><a href="">FRAGRANCE</a></p>
+                <p><a href="">TOOLS& ACCESSORIES</a></p>
+                <p><a href="">hOME & LIFESTYLE</a></p>
+                <p><a href="">SUN CARE</a></p>
+                <p><a href="">MEN</a></p>
+                <p><a href="">GIFTS</a></p>
+                <p><a href="">LAST CHANCE & OFFERS</a></p>
+            </div>
+            <div id="second" class="two"></div>
+                <div id="third" class="one">
+                    <P>BY CATEGORY</P>
+                    <P>Shop All</P>
+                    <P>Skincare</P>
+                    <p>Makeup</p>
+                    <p>Hair Care</p>
+                    <p>Bath & Body</p>
+                    <p>Fragrance</p>
+                    <p>Tools & Accessories</p>
+                </div>
+            <div id="fourth" class="one">
+                <p>By Brand</p>
+                <p>Augustinus Bader</p>
+                <p>Chantecaille</p>
+                <p>Dr. Barbara Strum</p>
+                <p>Diptyque</p>
+                <p>Dyson</p>
+                <p>EltaMD</p>
+                <p>La Mer</p>
+                <p>Lune+Aster</p>
+                <p>M-61</p>
+                <p>Oribe</p>
+                <p>Skinceuticals</p>
+                <p>Trish McEvoy</p>
+            </div>
+            <div id="fifth" class="one">
+                <div>
+                    <img src="./Assets/94.jpg" 
+                    alt="">
+                    <p>M-61 Formulas You Love</p>
+                    <p>A best-selling cult-favorite clinical skincare brand</p>
+                </div>
+            </div>
         </div>
 
         <div class="right df" >
@@ -32,7 +90,7 @@
             <ul class="df ">
                 <a class="tag" href=""> <img src="./img/wishlist.png" alt="">Wishlist</a> 
                 <a class="tag" href=""> <img src="./img/bag.png" alt="">Bag</a> 
-                 <a class="tag" href="signup.html"> <img src="./img/user.png" alt="">SIGN IN / UP</a> 
+                <a class="tag" href="signup.html"> <img src="./img/user.png" alt="">SIGN IN / UP</a> 
                 
             </ul>
 
@@ -40,6 +98,9 @@
     </nav>
 </header>
 <!-- Navbar End -->
+
+<body onchange="LetItSlide()" onload="LetItSlide()">
+<!-- Navbar Start -->
 
     <!-- Sliding Options Start-->
     <div id="slider">
@@ -86,7 +147,7 @@
     <!-- Product Sliding End -->
 
     <!-- Bestseller Sliding Start -->
-    <div id="slide-explore">
+    <div id="slide-explore" onchange="LetItSlide()">
         <div id="slide-above">
             <p>BESTSELLERS</p>
         </div>
@@ -216,7 +277,7 @@
     <!-- Befor EXPLORE THE CACHE VOLUME II Slide End -->
 
     <!-- EXPLORE THE CACHE VOLUME II Slide Start -->
-    <div id="slide-explore">
+    <div id="slide-explore" onchange="LetItSlide()">
         <div id="slide-above">
             <p>EXPLORE THE CACHE VOLUME II</p>
         </div>
@@ -335,11 +396,11 @@
              <img src="./Assets/65.jpg" alt="Snow" style="width:100%;">
              <div class="centered"> 
                  <p> THE CACHE</p>
-                 <p>VOLUME ||</p>
+                 <p>VOLUME II</p>
                  <p class="h2">exclusively at bluemercury</p>
                  <p> We're introducing The Cache Volume II, three more buzzed-about brands that are 
                      exciting insiders and showing up on the chicest bathroom shelves </p>
-                     <a href="url">EXPLORE THE CACHE</a>
+                     <a>EXPLORE THE CACHE</a>
              </div>
            </div>
      </div>
@@ -356,13 +417,13 @@
             <p>Now you can create your own at-home traditional Chinese 
                 medicine ritual with the Redmint botanically based 
                 face and body range</p>
-            <!-- <p>Shop Now</p> -->
+            <p>Shop Now</p>
         </div>
     </div>
 
     
     <!-- NEW ARRIVALS Start -->
-    <div id="slide-explore" >
+    <div id="slide-explore" onchange="LetItSlide()">
         <div id="slide-above">
             <p>NEW ARRIVALS</p>
         </div>
@@ -474,7 +535,109 @@
         </div>
     </div>
     <!-- NEW ARRIVALS End -->
-    
+
+    <!-- END PRODUCT Start -->
+    <div id="end-product">
+        <div>
+            <img src="./Assets/95.jpg" 
+            alt="MAKE YOUR EYES STAND OUT">
+            <p class="end-product-title">MAKE YOUR EYES STAND OUT</p>
+            <p>This palette has something for everyone! The Kaleidescope 
+                Nudes Eyeshadow Palette has shades to make every eye color pop</p>
+        </div>
+        <div>
+            <img src="./Assets/96.jpg" 
+            alt="Everything Under the Sun">
+            <p class="end-product-title">Everything Under the Sun</p>
+            <p>Now you have no more excuses for skipping sunscreen, thanks to new 
+                face and body formulas that feel great while offering protection</p>
+        </div>
+    </div>
+    <!-- END PRODUCT End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <hr>
+        <div class="footer_container" >
+
+            <div class="social">
+
+                <div class="footer_content">
+
+                    <h2>Get Expert Beauty Insight & Offers</h2>
+                   <input id="input1" type="text" placeholder= "EMAIL ADDRESS           &rarr;" >  
+                    <p>By continuing, you agree to Bluemercury's</p>
+                    <p><a href="">Privacy Notice.</a></p>
+                </div>
+              
+                  
+                 
+                <div class="social_icon">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>
+                    Copyright 2023 bluemercury. All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="about_company">
+                <h2 style="margin: left 10px;">BLUEMERCURY</h2>
+
+                <ul>
+                    <li><a href="">Our Company</a></li>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Spa Menu</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Vendor Submissions</a></li>
+                    <li><a href="">Diversity & Inclusion</a></li>
+                </ul>
+
+            </div>
+            <div class="account">
+                <h2>MY ACCOUNT</h2>
+
+                <ul>
+                    <li><a href="">My Account</a></li>
+                    <li><a href="">BlueRewards</a></li>
+                    <li><a href="">Gift Card Balance Checker</a></li>
+                </ul>
+
+            </div>
+            <div class="account">
+                <h2>CUSTOMER SERVICE</h2>
+
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Help & FAQ</a></li>
+                    <li><a href="">Shipping, Returns & Exchanges</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Offers & Promotions</a></li>
+                    <li><a href="">Klarna</a></li>
+                </ul>
+
+            </div>
+            <div class="resources">
+                <h2>RESOURCES</h2>
+
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Notice</a></li>
+                    <li><a href="">Do Not Sell or Share My Personal Information</a></li>
+                    <li><a href="">CA Privacy Rights</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Affiliate Program</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
 
 </body>
 

@@ -1,3 +1,9 @@
+
+/* Same font and margin for the body */
+body{
+    margin-top: 50px;
+    font-family: "Montserrat Light", sans-serif;
+}
 /* cursor: pointer for all the images in the web page */
 img{
     cursor: pointer;
@@ -11,10 +17,19 @@ img{
 }
 #slider figure {
     position: relative;
+    /* transform: translateY(150px);
+    opacity: 1; */
+    /* z-index: 3; */
     width: 500%;
     margin: 0;
     left: 0;
     animation: 25s slider infinite;
+}
+
+#slider figure:active{
+    position: static;
+    transform: translateY(0);
+    opacity: 0;
 }
 #slider figure div {
     height: 36px;
@@ -63,7 +78,7 @@ img{
         left: -300%;
     }
     100% {
-        left: -400%;
+        right: 0;
     }
 }
 /* Sliding Options End */
@@ -71,14 +86,14 @@ img{
 /* Product Sliding Start */
 .slider {
     width: 100%;
-    height: 520px;
+    /* height: 520px; */
     margin-bottom: 0;
     overflow: hidden;
 }
 
 .slides {
     width: 700%;
-    height: 350px;
+    /* height: 350px; */
     display: flex;
 }
 
@@ -123,6 +138,7 @@ img{
 #slide-explore {
     width: 90%;
     margin: auto;
+    margin-top: 15px;
 }
 
 #slide-above {
@@ -145,7 +161,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .slide-child img {
@@ -171,7 +187,7 @@ img{
 #slide-leftarrow button, #slide-rightarrow button {
     background: transparent;
     border: none;
-    height: 50px;
+    /* height: 50px; */
     font-size: 70px;
     color: gray;
 }
@@ -204,7 +220,7 @@ img{
 
 #lipstick-content-cache{
     text-align: justify; /* For Edge */
-    text-align-last: end;
+    text-align-last: start;
     display: block;
     margin: auto;
 }
@@ -248,16 +264,29 @@ img{
     line-height: 24px;
 }
 
-#lipstick div p:nth-child(3) {
+#lipstick-content p:nth-child(3) {
     color: #12284c;
     font-size: 20px;
     padding-bottom: 5px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
-    margin-left: 84%;
+    /* margin-left: 84%; */
+    text-align: right;
+    width: fit-content;
+    /* text-align: justify; For Edge */
+    /* text-align-last: end; */
+}
+
+#lipstick-content-cache p:nth-child(3) {
+    color: #12284c;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    /* margin-left: 84%; */
     width: fit-content;
     text-align: justify; /* For Edge */
-    text-align-last: end;
+    /* text-align-last: start; */
 }
 
 #lipstick div p:nth-child(3):hover{
@@ -282,18 +311,19 @@ img{
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
-    height: 70vh;
+    margin-top: 20px;
+    line-height: 1.5;
   }
 
   .container p:nth-child(1){
     font-size: 60px;
     font-weight: 100;
-    margin-top: 0;
+    margin-top: 50px;
     margin-bottom: 0;
   }
 
   .container p:nth-child(2){
-    font-size: 20px;
+    font-size: 30px;
     font-weight: thin;
     margin-top: 0;
     margin-bottom: 2px;
@@ -304,10 +334,22 @@ img{
 	text-transform: none; 
 	max-width: 35em;
 	margin: 0.5em auto;
-	letter-spacing: 0;
+	letter-spacing: 2;
 	font-size: 110%;
-	line-height: 1.3;"
+	/* line-height: 1.3; */
   }
+
+  .container a:nth-child(5){
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    width: fit-content;
+  }
+
+  .container a:nth-child(5):hover{
+    cursor: pointer;
+  }
+
   .container img{
     width: 100%;
     height: 300px;
@@ -326,6 +368,41 @@ img{
   }
   /* Middle Image EXPLORE THE CACHE VOLUME II End */
        
+  /* End Product Start */
+
+#end-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 50px auto 50px;
+    grid-gap: 25px;
+}
+
+#end-product div img {
+    width: 100%;
+}
+
+#end-product div img+p {
+    color: #12284c;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+#end-product div p:nth-child(2){
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgb(18, 40, 76);
+}
+
+#end-product div p:nth-child(3) {
+    font-size: 20px;
+    color: #7d7d7d;
+    width: 90%;
+    line-height: 1.25;
+}
+
+  /* End Product End */
   
 /* Navbar Start */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
@@ -343,6 +420,7 @@ img{
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: fixed;
+    z-index: 1;
     top: 0;
     background: white;
     width: 100%;
@@ -361,25 +439,21 @@ img{
 
 .left img {
     width: 200px;
-
-
 }
 
 ul {
     display: flex;
-
 }
 
 ul li {
     list-style: none;
-
 }
 
 
 ul li a {
     text-decoration: none;
     padding: 15px;
-    color: black;
+    color: #12284c;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -391,7 +465,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: black;
+    color: #12284c;
     opacity: 1;
     /* display: none; */
 }
@@ -399,8 +473,6 @@ ul li a:hover {
 #nav {
     display: none;
 }
-
-
 
 .df {
     display: flex;
@@ -412,14 +484,11 @@ ul li a:hover {
     object-fit: contain;
 }
 
-
-
-
 .tag {
     text-align: center;
     justify-content: center;
     text-decoration: blink;
-    color: black;
+    color: #12284c;
     padding: 0 20px;
     font-size: 13px;
     display: grid;
@@ -433,7 +502,6 @@ input {
 
 }
 
-
 .homePage {
     background-color: #ccc;
 
@@ -445,16 +513,38 @@ input {
     margin-top: 10rem;
 }
 
-@media only screen and (max-width:1200px) {
+/* MEDIA QUERIES Start */
 
+@media only screen and (max-width:1200px) {
     .navFlex{
         display: block;
+    }
+
+    #lipstick-content p:nth-child(3) {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #lipstick div img {
+        width: 100%;
+        height: auto;
     }
 }
 
 
 @media only screen and (max-width: 768px){
+    
+    #lipstick{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 
+    #lipstick div img {
+        width: 100%;
+        height: auto;
+    }
+    
     #nav{
         display: block;
         top: 10px;
@@ -462,12 +552,12 @@ input {
         position: fixed;
         cursor: pointer;
     }
-  ul{
+    ul{
         display: none;
     }
     .bt {
         display: block;
-    
+        
     }
     .m_logo{
         display: flex;
@@ -475,20 +565,127 @@ input {
         
         width: 100%;
     }
+
+    #lipstick{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #end-product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 50px auto 50px;
+        grid-gap: 25px;
+    }
     
 }
 
 @media only screen and (max-width: 500px){
     
-
+    
     .left img, input{
         display:none;
     }
     .df{
         display: flex;
     }
+
+    #slide-explore {
+        width: 100%;
+    }
+
+    .slide-parent {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
     
+}
+/* MEDIA QUERIES End */
+
+
+/* Navbar End */
+
+
+
+#shop {
+    width: 100%;
+    height: 460px;
+    display: none;
+    margin: auto;
+    grid-template-columns: 200px 50px 200px 200px 300px;
+    padding-left: 200px;
+    padding-top: 30px;
+    position: fixed;
+    top: 140px;
+    z-index: 2;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+.shop:hover{
+    display: inline-block;
+}
+
+/* 
+#shop a {
+    text-decoration: none;
+    color: rgba(18, 40, 76, 0.6);
+    font-weight: 300;
     
 }
 
-/* Navbar End */
+#shop p:hover {
+    display: inline-block;
+    color: #12284c;
+    font-weight: 400;
+    line-height: 14px;
+    size: 14px;
+}
+
+#shop-hover{
+    text-decoration: none;
+}
+
+#hide{
+    width: 20px;
+    margin: auto;
+}
+
+#shop-button{
+    width: 20px;
+    margin: auto;
+}
+
+.option{
+    text-decoration: none;
+    font-weight:100;
+    color: rgba(18, 40, 76, 0.8);
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.option:hover {
+    color: rgba(18, 40, 76);
+    font-weight: 400;
+}
+
+.left{
+    display: flex;
+    margin-top: 15px;
+}
+
+.left > div{
+    flex-basis: 120px;
+}
+
+.left > div:nth-child(1), .left > div:nth-child(8){
+    flex-grow: 1;
+} */
+
+/* Footer Start */
+
