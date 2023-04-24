@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy and Noice</title>
+    <script src="https://kit.fontawesome.com/b7836bba55.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
@@ -76,34 +77,37 @@ ul > li  > a{
 
 
 
-  @media only screen and (min-width:280px)      (max-width:600px)  {
-    .container{
-      margin-left: 1%;
-      margin-right: 1%;
+  @media only screen and (max-width:600px)  {
+      .container{
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+      ul > li  > a{
+      font-size: x-large;
+      text-decoration:underline;
+      color:rgb(57, 57, 57);
+      }
+    
+    .heading{
+      text-align: center;
+      font-size: 15px;
+      /* display: grid   ; */
+      width: 100%;
+      background: #e8f6ff;
+      /* padding: 2px  0; */
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Schibsted Grotesk', sans-serif;
     }
-    ul > li  > a{
-    font-size: x-large;
-    text-decoration:underline;
-    color:rgb(57, 57, 57);
-    
+}
+#home-page{
+    color: black;
+    font-size: 30px;
+}
 
-  }
-
-  .heading{
-    text-align: center;
-    font-size: 15px;
-    /* display: grid   ; */
-    width: 100%;
-    
-    background: #e8f6ff;
-    /* padding: 2px  0; */
-    font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Schibsted Grotesk', sans-serif;
-  }
-
-
-  }
+#home-page i{
+    color: black;
+}
     
 </style>
 
@@ -112,6 +116,9 @@ font-family: 'Schibsted Grotesk', sans-serif;
 </head>
 
 <body>
+    <div id="home-page">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
     <div class="heading">
         <h1>Privacy Notice</h1>
     </div>

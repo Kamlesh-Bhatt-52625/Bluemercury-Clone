@@ -5,24 +5,22 @@ let getPass=JSON.parse(localStorage.getItem("userCred"))||[] ;
 
 function goToHome(){
     event.preventDefault();
-    getPass.map(function(e,i){
-        let newPass =document.querySelector("#pass1").value ;
-        let confPass =document.querySelector("#pass2").value ;
+        let newPass =document.querySelector("#passone").value ;
+        let confPass =document.querySelector("#passtwo").value ;
+        console.log(newPass);
         if(newPass===confPass){
             // getPass.push(e.newPass)
             // console.log(getPass)
 
-          window.location.href="./home.html"
+          window.location.href="index.html"
         }else{
             setTimeout(showAlert, 300);
-           
             // window.location.href="./newPassword.html"
             // alert("Please Enter Same Password")
         }
-    })
-    
+        console.log(getPass);
 }
 
 function showAlert(){
-    document.querySelector("#alert").textContent="Please Enter Same Password!"
+    document.querySelector("#wrong").textContent="Please Enter Same Password!"
 }
