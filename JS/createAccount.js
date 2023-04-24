@@ -27,6 +27,6 @@ function createAccount() {
 
     document.querySelector(".registerbutton").innerHTML="LOADING..."
     setTimeout(function(){})
-    window.location.href="./home.html"
+    window.location.href="index.html"
 
 }

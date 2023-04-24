@@ -11,7 +11,7 @@ function login(){
         if(email==e.email && pass == e.pass){
             // alert("hello user")
            
-            window.location.href="./payment.html"
+            window.location.href="index.html"
         }else{
             alert("wrong cred")
             window.location.href="./login.html"

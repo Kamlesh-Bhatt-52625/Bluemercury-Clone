@@ -272,9 +272,24 @@ function btnDown(){
     console.log(i)
 }
 var num =0;
+let item = document.getElementById("itemval").innerHTML;
 function btnInc(){
+    let val = document.getElementById("textbox").value;
+    let result = Number(val * item);
 
-   num = document.getElementById("textbox").value ;
+    document.getElementById("itemval").textContent = result;
+
+    let amt = document.getElementById("product_total_amt").innerHTML;
+    document.getElementById("product_total_amt").innerHTML = parseInt(item) + parseInt(itme) + parseInt(amt);
+
+    item.textContent = result;
+
+    val.textContent = val * num;
+    num = document.getElementById("textbox").value;
+    num = Number(num)+1;
+    document.getElementById("textbox").value=num;
+
+    num = document.getElementById("textbox").value ;
     num = Number(num)+1;
     document.getElementById("textbox").value  =num;
 }
