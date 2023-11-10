@@ -1,6 +1,6 @@
 # Bluemercury-Clone
 
-Visit Here: bluemercury-clone-masai.netlify.app/
+Visit Here: [bluemercury-clone-masai.netlify.app/](https://bluemercury-clone-masai.netlify.app/)
 
 
 Kamlesh Bhatt -> Home Page <br />
